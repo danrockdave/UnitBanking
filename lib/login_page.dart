@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unitbankapp/cadastro.dart';
 import 'package:unitbankapp/configuracoes_locais.dart';
 import 'package:unitbankapp/home_page.dart';
 import 'package:unitbankapp/utils.dart';
@@ -54,7 +55,7 @@ class _NumeroContaInputState extends State<NumeroContaInput> {
         SizedBox(height: 20.0),
         ElevatedButton(
           onPressed: () {
-
+            push(context, Cadastro());
           },
           child: Text('Criar Conta'),
         ),
